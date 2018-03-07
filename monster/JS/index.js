@@ -265,6 +265,19 @@ function finish(){
 
 
 
+document.onkeyup = function(event){
+  var key = String.formCharCode(event.keycode);
 
+  if (key == A){
+    
+      heroAttack();
+    }
+  if (key == D){
+    
+      monsterAttack();
+  
+  }
+  endTurn();
+}
 
 
